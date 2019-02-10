@@ -108,9 +108,9 @@ def evaluate_accuracy(data_iterator, net):
     return acc.get()[1]
 
 
-epochs = 50
+epochs = 20
 smoothing_constant = .001
-trainer = gluon.Trainer(net.collect_params(), 'sgd', {'learning_rate': .001})
+trainer = gluon.Trainer(net.collect_params(), 'adagrad', {'learning_rate': .001})
 training_loss_vector=[]
 validation_loss_vector=[]
 
@@ -152,11 +152,11 @@ plt.show()
 x_axis = np.linspace(0 , epochs , len(validation_loss_vector) )
 plt.semilogy(x_axis , validation_loss_vector)
 plt.xlabel('epochs')
-plt.ylabel('training_loss')
+plt.ylabel('validation_loss')
 plt.show()
 
 print ('Saving')
-net.save_parameters("NN2.params")
+net.save_parameters("NN2_adagrad.params")
 print ('Saved')
 
 
@@ -165,16 +165,16 @@ print("TestAccuracy %s" % (test_accuracy))
 
 """ 
 sgd                                  
-epochs=50                           
-train acc=93.8
-valid acc=
-test acc= 87.7
+epochs=20                           
+train acc=88.6
+valid acc=87.17
+test acc= 86.09
 
 rmsprop
-epochs=50
-train acc=93.8
-valid acc=87.66
-test acc= 86.77
+epochs=20
+train acc=90.78
+valid acc=88.12
+test acc= 86.85
 
 momentum
 epochs=50
@@ -183,16 +183,16 @@ valid acc=87.66
 test acc= 86.77
 
 adadelta
-epochs=50
-train acc=93.8
-valid acc=87.66
-test acc= 86.77
+epochs=20
+train acc=84.96
+valid acc=83.36
+test acc= 82.66
 
 adagrad
-epochs=50
-train acc=93.8
-valid acc=87.66
-test acc= 86.77
+epochs=20
+train acc=94.52
+valid acc=89.23
+test acc= 88.18
 
 """
 

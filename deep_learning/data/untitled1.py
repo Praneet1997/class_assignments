@@ -47,8 +47,13 @@ a2.shape
 b2.shape
 a2.asnumpy()
 b2.asnumpy() 
-
-    
+for i in range(1024):
+    print(i)
+    for j in range(42000):
+        c=a[i,:]
+        d=train_images[j,:]
+        dense1[i][j]=np.dot(c.T,d)
+        print (dense1[i][j])
 dense_layer1=np.dot(a,train_images.T)+b.T
 dense_layer2=np.dot(a1,dense_layer1)+b1.T
 dense_layer3=np.dot(a2,dense_layer2)+b2.T

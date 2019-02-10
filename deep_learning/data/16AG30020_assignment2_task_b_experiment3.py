@@ -111,7 +111,7 @@ def evaluate_accuracy(data_iterator, net):
     return acc.get()[1]
 
 
-epochs = 50
+epochs = 20
 smoothing_constant = .001
 trainer = gluon.Trainer(net.collect_params(), 'adam', {'learning_rate': .001})
 training_loss_vector=[]
@@ -155,7 +155,7 @@ plt.show()
 x_axis = np.linspace(0 , epochs , len(validation_loss_vector) )
 plt.semilogy(x_axis , validation_loss_vector)
 plt.xlabel('epochs')
-plt.ylabel('training_loss')
+plt.ylabel('validation_loss')
 plt.show()
 
 print ('Saving')
@@ -168,9 +168,9 @@ print("TestAccuracy %s" % (test_accuracy))
 
 """ 
 epochs=50
-train acc=92.3
-valid acc=88.6
-test acc= 87.75
+train acc=89.7
+valid acc=87.5
+test acc= 86.69
 
 """
 

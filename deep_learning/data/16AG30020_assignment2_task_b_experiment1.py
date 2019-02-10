@@ -90,7 +90,7 @@ with net.name_scope():
     net.add(gluon.nn.Dense(10))
     
     
-net.collect_params().initialize(mx.init.Orthogonal(), ctx=model_ctx)
+net.collect_params().initialize(mx.init.Xavier(), ctx=model_ctx)
 softmax_cross_entropy = gluon.loss.SoftmaxCrossEntropyLoss()
 
 def transform(data, label):
@@ -108,7 +108,7 @@ def evaluate_accuracy(data_iterator, net):
     return acc.get()[1]
 
 
-epochs = 50
+epochs = 20
 smoothing_constant = .001
 trainer = gluon.Trainer(net.collect_params(), 'adam', {'learning_rate': .001})
 training_loss_vector=[]
@@ -152,11 +152,11 @@ plt.show()
 x_axis = np.linspace(0 , epochs , len(validation_loss_vector) )
 plt.semilogy(x_axis , validation_loss_vector)
 plt.xlabel('epochs')
-plt.ylabel('training_loss')
+plt.ylabel('validation_loss')
 plt.show()
 
 print ('Saving')
-net.save_parameters("NN2_xavier.params")
+net.save_parameters("NN2_Xavier.params")
 print ('Saved')
 
 
@@ -167,15 +167,15 @@ print("TestAccuracy %s" % (test_accuracy))
 """
  Xavier:
 epochs=50
-train acc=92.6
-valid acc=87.88
+train acc=89.72
+valid acc=86.7
 test acc= 87.15
 
 Orthogonal:
     epochs=50
-train acc=
-valid acc=87.66
-test acc= 86.77
+train acc=90.6
+valid acc=87.5
+test acc= 85.75
 """
 
 
