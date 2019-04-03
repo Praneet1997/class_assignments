@@ -1,0 +1,7 @@
+picasso/picasso/
+Corner.jpg
+Girl.jpg
+LadyWFan.jpg
+Musician.jpg
+Self_Picasso.jpg
+Tragedy.jpg

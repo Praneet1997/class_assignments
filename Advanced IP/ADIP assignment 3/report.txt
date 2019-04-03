@@ -1,0 +1,103 @@
+To run, in the terminal type the command:
+python sparse.py
+
+
+
+For Picasso dataset:
+reconstructed images in folder reconstructed_dataset_0
+
+1) Compression Ratio
+
+('Compression Ratio for image 1 is ', 0.959968682576396)
+('Compression Ratio for image 2 is ', 1.0242843439188165)
+('Compression Ratio for image 3 is ', 1.1763945854178874)
+('Compression Ratio for image 4 is ', 1.222773656623434)
+('Compression Ratio for image 5 is ', 1.3799803627719498)
+('Compression Ratio for image 6 is ', 1.2338830471860722)
+
+2) PSNR
+
+('PSNR of image 1 is ', 32.72507098392743)
+('PSNR of image 2 is ', 33.88873705651207)
+('PSNR of image 3 is ', 33.56310769399026)
+('PSNR of image 4 is ', 31.24591303732508)
+('PSNR of image 5 is ', 31.12832936308915)
+('PSNR of image 6 is ', 33.424535792174865)
+
+For Bazille dataset:
+reconstructed images in folder reconstructed_dataset_1
+
+1) Compression Ratio
+
+('Compression Ratio for image 1 is ', 1.2891331098570034)
+('Compression Ratio for image 2 is ', 1.3108993754495735)
+('Compression Ratio for image 3 is ', 1.0425012500367659)
+('Compression Ratio for image 4 is ', 1.1451035260459628)
+('Compression Ratio for image 5 is ', 1.1355910136415583)
+('Compression Ratio for image 6 is ', 1.1319016840218319)
+('Compression Ratio for image 7 is ', 1.0348796741470205)
+('Compression Ratio for image 8 is ', 1.3281309785125963)
+
+
+2) PSNR
+
+('PSNR of image 1 is ', 31.324201854679433)
+('PSNR of image 2 is ', 31.104648449179688)
+('PSNR of image 3 is ', 31.416764569924027)
+('PSNR of image 4 is ', 30.840545074629087)
+('PSNR of image 5 is ', 32.78613927613921)
+('PSNR of image 6 is ', 32.989022222902726)
+('PSNR of image 7 is ', 32.308666643345425)
+('PSNR of image 8 is ', 31.963710114581055)
+
+
+
+For Picasso dataset (bipartite matching):
+reconstructed images in folder bipartiteMatching_0
+
+1) Compression Ratio
+
+('Compression Ratio for image 1 is ', 0.4402722423538054)
+('Compression Ratio for image 2 is ', 0.40798409615848685)
+('Compression Ratio for image 3 is ', 0.4781465729124367)
+('Compression Ratio for image 4 is ', 0.5394351105379855)
+('Compression Ratio for image 5 is ', 0.5472621777054808)
+('Compression Ratio for image 6 is ', 0.5258177712485806)
+
+2) PSNR
+
+('PSNR of image 1 is ', 28.171856430239913)
+('PSNR of image 2 is ', 28.280530513399672)
+('PSNR of image 3 is ', 28.36386036673892)
+('PSNR of image 4 is ', 28.361170514154384)
+('PSNR of image 5 is ', 28.19366910078932)
+('PSNR of image 6 is ', 28.468120391615717)
+
+
+
+For Bazille dataset (bipartite matching):
+reconstructed images in folder bipartiteMatching_1
+
+1) Compression Ratio
+
+('Compression Ratio for image 1 is ', 1.2891331098570034)
+('Compression Ratio for image 2 is ', 1.3108993754495735)
+('Compression Ratio for image 3 is ', 1.0425012500367659)
+('Compression Ratio for image 4 is ', 1.1451035260459628)
+('Compression Ratio for image 5 is ', 1.1355910136415583)
+('Compression Ratio for image 6 is ', 1.1319016840218319)
+('Compression Ratio for image 7 is ', 1.0348796741470205)
+('Compression Ratio for image 8 is ', 1.3281309785125963)
+
+2) PSNR
+
+('PSNR of image 1 is ', 31.324201854679433)
+('PSNR of image 2 is ', 31.104648449179688)
+('PSNR of image 3 is ', 31.416764569924027)
+('PSNR of image 4 is ', 30.840545074629087)
+('PSNR of image 5 is ', 32.78613927613921)
+('PSNR of image 6 is ', 32.989022222902726)
+('PSNR of image 7 is ', 32.308666643345425)
+('PSNR of image 8 is ', 31.963710114581055)
+
+
